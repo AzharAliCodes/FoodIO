@@ -200,12 +200,26 @@
     position: absolute;
     top: 10px;
     right: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
 }
 
 .card-actions button {
     padding: 5px;
     margin: 0 2px;
     transition: all 0.3s ease;
+    background-color: rgba(255, 165, 0, 0.8); 
+    background-color: dark;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: none;
+    box-shadow: none;
 }
     .card-actions button.text-danger {
     color: #dc3545 !important;
@@ -220,7 +234,8 @@
 }
 
 .card-actions button:hover {
-    opacity: 0.8;
+    opacity: 1;
+    background: rgba(255, 165, 0, 1);
     transform: scale(1.1);
 }
 .share-options {
